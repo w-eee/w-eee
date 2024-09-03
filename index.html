@@ -14,6 +14,8 @@
             height: 100vh;
             margin: 0;
             background-color: #e9ecef;
+            padding: 20px;
+            box-sizing: border-box;
         }
         .container {
             background-color: white;
@@ -21,9 +23,10 @@
             border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
-            width: 90%;
+            width: 100%;
             max-width: 400px;
             margin-bottom: 20px;
+            box-sizing: border-box;
         }
         input[type="text"] {
             width: 80%;
@@ -46,18 +49,15 @@
             background-color: #218838;
         }
         .image-container {
-            border: 2px solid red;
-            padding: 10px;
-            width: 90%;
+            width: 100%;
             max-width: 400px;
             text-align: center;
-            box-sizing: border-box;
         }
         .image-container img {
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 0 auto;
+            margin: 10px 0;
         }
         .tip {
             margin-bottom: 10px;
@@ -65,19 +65,37 @@
             color: #333;
             text-align: center;
         }
+        .ad {
+            margin: 20px 0;
+            font-size: 16px;
+            color: #333;
+            text-align: center;
+        }
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <input type="text" id="email" placeholder="请输入您的邮箱">
+        <input type="text" id="email" placeholder="请输入闲鱼发给您的邮箱">
         <button onclick="redirectToYOPmail()">获取验证码</button>
     </div>
 
     <div class="tip">
-        进去后您能看到这样类似的邮件来获取验证码，如果没有收到，请重新发送验证码或联系店主。
+        进去后您能看到这样类似的邮件来获取验证码，<br>
+        <span class="highlight">验证码会有0.5-2分钟的延迟,没收到请刷新或多发几次, 或者咨询闲鱼店主</span>
     </div>
+    
     <div class="image-container">
-        <img src="https://cdn.z.wiki/autoupload/20240903/ox3o/1314X916/391725368688-.pic.jpg" alt="邮件示例">
+        <img src="pic1.png">
+        <img src="pic2.jpg">
+    </div>
+
+    <div class="ad">
+        专业weee优惠券/代购. <a href="https://m.tb.cn/h.gooHFmC?tk=i1Io3gAunuB" target="_blank">https://m.tb.cn/h.gooHFmC?tk=i1Io3gAunuB</a> MF7997【复制到闲鱼打开】
     </div>
 
     <script>
